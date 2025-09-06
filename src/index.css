@@ -1,0 +1,57 @@
+@import "tailwindcss";
+body{
+  
+     background: linear-gradient(135deg, #0d0d0d, #1a0033, #330033);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  min-height: 100vh;
+}
+.neon-text {
+  color: black#ff00ff;
+  text-shadow: 0 0 5px #ff00ff,
+               0 0 10px #ff00ff,
+               0 0 20px #ff00ff,
+               0 0 40px #ff00ff;
+}
+
+/* Neon Border & Glow */
+.neon-box {
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 5px #ff00ff,
+              0 0 15px #ff00ff,
+              0 0 30px #ff00ff;
+}
+
+/* Neon Button Glow */
+.neon-btn {
+  background-color: #ec7dec;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 5px #ff00ff,
+              0 0 15px #ff00ff,
+              0 0 30px #ff00ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-btn:hover {
+  background-color: #a308a3;
+  box-shadow: 0 0 10px #ff00ff,
+              0 0 20px #ff00ff,
+              0 0 40px #ff00ff;
+}
+.neon-navbar {
+  background-color: #0a0a0a; /* Dark background */
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 5px #ff00ff,
+              0 0 15px #ff00ff,
+              0 0 30px #ff00ff;
+}
+
+/* Neon Links */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
